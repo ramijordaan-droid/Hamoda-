@@ -151,6 +151,11 @@
                 <option value="">أختر مبلغ السلفة</option>
                 <option>5 مليون</option>
                 <option>10 مليون</option>
+                <option>15 مليون</option>
+                <option>20 مليون</option>
+                <option>25 مليون</option>
+                <option>30 مليون</option>
+                <option>50 مليون</option>
               </select>
             </div>
 
@@ -245,7 +250,7 @@
     });
 
     function escapeHtml(s){
-      return String(s).replace(/[&<>\"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; });
+      return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; });
     }
 
     function validPhone(v){ return /^[0-9+ ]{6,20}$/.test(v); }
